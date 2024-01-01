@@ -2,12 +2,20 @@
 
 
 body{
-  background-color: #13265C;
+  background-image: url('../IMGS/starbg.jpg');
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
-.custom-nav-bg-color{
+.custom-white-bg-color-black-border,.custom-white-bg-color-black-border-top{
   border-bottom: 1px black solid;
   background-color: white;
+}
+
+.custom-white-bg-color-black-border-top{
+  border-bottom: none;
+  border-top: 1px black solid;
 }
 
 .custom-white-jumbo-bgcolor{
@@ -20,9 +28,19 @@ body{
   background-color: black;
 }
 
+.bg-white{
+  color: black;
+  background-color: white;
+}
+
+.bg-dark-blue{
+  background-color: #13265C;
+  color: white;
+}
+
 .top-bar{
   height: 20px;
-  background-color: black;
+  background-color: #13265C;
   color: white;
 
 }
@@ -31,6 +49,11 @@ body{
   font-family: Roboto;
 }
 
+.w-10{
+  width: 10%
+}
+
+
 
 /* custom slide colors */
 .solid-color-slide1,.solid-color-slide2,.solid-color-slide3{
@@ -38,19 +61,16 @@ body{
 }
 
 .solid-color-slide1{
-  background: rgb(208,11,255);
-  background: linear-gradient(90deg, rgba(208,11,255,1) 0%, rgba(127,0,255,1) 100%);
-  
+ background-color: #FFD700;
 }
 
 .solid-color-slide2{
-  background: rgb(11,93,255);
-  background: linear-gradient(90deg, rgba(11,93,255,1) 0%, rgba(0,180,255,1) 100%);
+  background-color: #13265C;
 }
 
 .solid-color-slide3{
-  background: rgb(255,11,72);
-  background: linear-gradient(90deg, rgba(255,11,72,1) 0%, rgba(255,0,235,1) 100%);
+  background: rgb(11,93,255);
+  background: linear-gradient(90deg, rgba(11,93,255,1) 0%, rgba(0,180,255,1) 100%);
 }
 
 /*custom button styling*/
@@ -85,4 +105,11 @@ body{
 
 }
 
+/*mobile top bar hidden*/
 
+@media only screen and (max-width: 425px){
+  .top-bar{
+    display: none;
+  }
+  
+}
