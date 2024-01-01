@@ -1,5 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
 
+/*hover anims for the buttons */
+@keyframes whiteBlackAnimator {
+    
+    0%{
+      background-color: white;
+      color: black;
+    }
+
+    100%{
+      background-color: black;
+      color: white;
+    }
+
+}
+
+
 
 body{
   background-image: url('../IMGS/starbg.jpg');
@@ -42,8 +58,16 @@ body{
   height: 20px;
   background-color: #13265C;
   color: white;
-
+  transition: 0.3s animation;
 }
+
+.top-bar:hover,.box:hover{
+  animation: whiteBlackAnimator 0.3s;
+  background-color: black;
+  color: white;
+}
+
+
 
 .roboto-font{
   font-family: Roboto;
